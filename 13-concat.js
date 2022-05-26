@@ -19,9 +19,14 @@ console.log("miArray " ,miArray);
 const rta2 =  [...elements , ...otherElements];
 console.log("rta2 " , rta2);
 
-const conPush=elements.push(otherElements);
+const copiaDeElements  = [...elements]; //otra forma de copiar arrays uno elmeento a elemento.
+copiaDeElements.push(...otherElements);
+
 console.log(
     "que pasa si le meto todo el otroArray :" , 
-    conPush
+    elements,
+    copiaDeElements
 );
+
+
 
